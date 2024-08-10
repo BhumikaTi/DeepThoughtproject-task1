@@ -1,0 +1,231 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.blue{
+    color: blue;
+}
+.deep-thought-logo {
+    width: 40px; /* Adjust size as needed */
+    margin-right: 10px;
+}
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.submit-task {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gray-box {
+    background-color: #d3d3d3;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.gray-box h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.gray-box p {
+    color: #555;
+}
+
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 60px;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.sidebar.visible {
+    transform: translateX(250px);
+}
+
+.sidebar-toggle {
+    position: fixed;
+    left: 10px;
+    top: 70px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.main-content {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.asset-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.asset {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-ellipse {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.video-container {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.expand-collapse {
+    background-color: #333;
+    color: #fff;
+}
+
+button.add-subthread {
+    background-color: #0066cc;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.expandable-description {
+    margin-top: 10px;
+}
+
+.toggle-button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: block;
+}
+.fixed-icons {
+    position: fixed;
+    right: 20px; /* Adjust the position from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(30%); /* Align perfectly in the center */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+
+.icon-container {
+    margin-bottom: 20px; /* Space between icons */
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Circle shape */
+    font-size: 24px;
+    cursor: pointer;
+}
+h4 {
+    background-color: #f0f0f0; /* Light gray background for h4 */
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.toggle-paragraph {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.paragraph-content {
+    display: none; /* Hide paragraphs initially */
+    margin-bottom: 20px;
+}
+
+

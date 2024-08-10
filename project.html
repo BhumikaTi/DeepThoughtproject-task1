@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Project Management</title>
+    <link rel="stylesheet" href="project.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <!-- Quill Script -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo-title">
+                <img src="deep-thought-logo.jpg" alt="Deep Thought Logo" class="deep-thought-logo">
+                <h1 class="blue">DEEP THOUGHT</h1>
+            </div>
+            <div class="header-right">
+                <div class="icon-ellipse">🔔</div>
+                <div class="icon-ellipse">🏠</div>
+                <div class="icon-ellipse">⋮</div>
+                <div class="icon-ellipse">⚙️</div>
+                <div class="icon-ellipse user-profile">👤</div>
+            </div>
+        </div>
+    </header>
+    
+    <aside class="sidebar">
+        <button class="sidebar-toggle">☰</button>
+        <div class="journey-board">
+            <h3>Journey Board</h3>
+            <ul>
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure your pointers</li>
+                <li>4SA Method</li>
+            </ul>
+        </div>
+    </aside>
+
+    <div class="content">
+        <!-- Gray Box on Top of Main Content -->
+        <div class="gray-box">
+            <h3>Explore the world of management</h3>
+            <p>As a project manager, you play an important role in leading the project through initiation, monitoring, planning, execution, controlling, and completion. How? Do you want to manage each and every step of your life?</p>
+        </div>
+        
+        <!-- Main Content Area -->
+        <main class="main-content container">
+            <section class="asset-container">
+                <div class="asset">
+                    <h3 class="overlay-box"><span class="icon-ellipse">📝</span>Technical Project Management</h3>
+                    <p>Description: Story of Alignment Scope of Agility Specific Accountable Staggering Approach</p>
+                    <div class="video-container">
+                        <iframe width="100%" height="315" src="https://youtu.be/_8BgjCv4ogQ?si=tPr7G_xyHkHckiLc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="asset">
+                    <h3 class="overlay-box"><span class="icon-ellipse">📈</span>Threadbuild</h3>
+                    <p>Description: Watch the video and thread build, and jot out key threads while watching that video.</p>
+                    <div class="expandable-section">
+                        <div class="header">
+                            <span>Thread A</span>
+                            <button class="expand-collapse">^</button>
+                        </div>
+                        <div class="content">
+                            <div>
+                                <label>Sub thread 1</label>
+                                <textarea placeholder="Enter Text here"></textarea>
+                            </div>
+                            <div>
+                                <label>Sub Interpretation 1</label>
+                                <textarea placeholder="Enter Text here"></textarea>
+                            </div>
+                            <button class="add-subthread">+ Sub-thread</button>
+                            <textarea placeholder="Summary for Thread A"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="asset">
+                    <h3 class="overlay-box"><span class="icon-ellipse">📝</span>Structure Your Pointers</h3>
+                    <p>Description: Write a 400-500 word article, from your thread. Publish your understanding, and showcase your learning to the entire world.</p>
+                    <form>
+                        <h3>Title</h3>
+                        <input type="text" placeholder="">
+                        <h3>Content</h3>
+                        
+                        <div id="editor-container" style="height: 200px;"></div>
+                    </form>
+                    
+                </div>
+
+                <div class="asset">
+                    <h3 class="overlay-box"><span class="icon-ellipse">📚</span>4SA Method</h3>
+                    <p>Description: To explore more read more</p>
+                    <div class="expandable-description">
+                        <div class="description-content" style="display: block">
+                            <h4>Introduction</h4>
+                            <span class="toggle-paragraph">⏏</span>
+                            <div class="paragraph-content">
+                                <p>The 4SA Method, How to bring an idea into process?</p>
+                            </div>
+                            
+                            <h4>Thread A</h4>
+                            <span class="toggle-paragraph">⏏</span>
+                            <div class="paragraph-content">
+                                <p>How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?</p>
+                            </div>
+                            
+                            <h4>Example 1</h4>
+                            <span class="toggle-paragraph">⏏</span>
+                            <div class="paragraph-content">
+                                <p>You have a concept; how will you put it into a project?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </section>
+        </main>
+    </div>
+    <div class="fixed-icons">
+        <div class="icon-container">
+            <div class="icon question-mark">?</div>
+        </div>
+        <div class="icon-container">
+            <div class="icon meeting">👥</div>
+        </div>
+        <div class="icon-container">
+            <div class="icon calendar">📆</div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
